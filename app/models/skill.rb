@@ -1,4 +1,4 @@
 class Skill < ActiveRecord::Base
-  belongs_to :user
-  validates :name, uniqueness: true
+  has_and_belongs_to_many :users
+  # validates :name, uniqueness: true
 end
